@@ -8,8 +8,12 @@ export default function App() {
     <Router>
       <div>
         <Switch>
-          <Route exact path="/" component={Main}></Route>
-          <Route path="AddUsers" component={AddUsers}></Route>
+          <Route exact path="/">
+            <Main />
+          </Route>
+          <Route path="/AddUsers">
+            <AddUsers />
+          </Route>
         </Switch>
       </div>
     </Router>
